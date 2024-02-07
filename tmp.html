@@ -1,89 +1,58 @@
-<section class="portfolio section" id="Projects">
-    <header class="proj">
-        <h1 class="subtitle">Projects</h1>
-        <p>My works, projects & contributions</p>
-    </header>
-    <!-- Portfolio Container - Uses Swiper.js for image slider -->
-    <div class="portfolio__container container swiper-container swiper-container-initialized ...">
-
-        <!-- Individual Project Slides -->
-        <div class="swiper-wrapper " id="swiper-wrapper-d1a6e53d63def310f" aria-live="polite">
-            <!-- Each project is a swiper-slide -->
-            <div class="portfolio__content grid swiper-slide ..." data-swiper-slide-index="0">
-
-            </div>
-            <!-- Additional project slides follow the same structure -->
-            <div class="portfolio__content grid swiper-slide ..." data-swiper-slide-index="0">
-                <!-- Project Image -->
-                <!-- <img src="images/Myphoto.png" alt="Drive AI vector art" class="portfolio__img"> -->
-
-                <!-- Project Details -->
-                <div class="portfolio__data">
-                    <h3 class="portfolio__title">Vehicle Census and Motion Analysis: Unraveling the Dynamics of Roadway
-                        Activity</h3>
-                    <p class="portfolio__description">Utilizing computer vision, identify bounding boxes for all
-                        vehicles on the road at a specific moment, and employ deep learning for motion analysis to
-                        predict vehicle movements at various times. </p>
-                    <a href="https://github.com/aksh-ai/drive-ai"
-                        class="button button--flex button--small portfolio__button">
-                        View <i class="uil uil-arrow-right button__icon"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="portfolio__content grid swiper-slide ..." data-swiper-slide-index="0">
-                <!-- Project Image -->
-                <!-- <img src="images/Myphoto.png" alt="Drive AI vector art" class="portfolio__img"> -->
-
-                <!-- Project Details -->
-                <div class="portfolio__data">
-                    <h3 class="portfolio__title">Minesweeper - A nostalgic and interactive game from our childhood.</h3>
-                    <p class="portfolio__description">Developed the Minesweeper game from scratch using Java. Upon
-                        running the program, a screen displays the Minesweeper board, adhering to the familiar rules we
-                        all know.</p>
-                    <a href="https://github.com/aksh-ai/drive-ai"
-                        class="button button--flex button--small portfolio__button">
-                        View <i class="uil uil-arrow-right button__icon"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="portfolio__content grid swiper-slide ..." data-swiper-slide-index="0">
-                <!-- Project Image -->
-                <!-- <img src="images/Myphoto.png" alt="Drive AI vector art" class="portfolio__img"> -->
-
-                <!-- Project Details -->
-                <div class="portfolio__data">
-                    <h3 class="portfolio__title">Implementation of Enigma Machine used by Germans during World War II
-                    </h3>
-                    <p class="portfolio__description">Learned the logic behind the rotor movements of the machine from
-                        internet, replicated the logic behind the machine to encrypt and decrypt the messages.</p>
-                    <a href="https://github.com/aksh-ai/drive-ai"
-                        class="button button--flex button--small portfolio__button">
-                        View <i class="uil uil-arrow-right button__icon"></i>
-                    </a>
-                </div>
+<section class="timeline-section" id="experience">
+    <h1 class="subtitle">My Journey</h1>
+    <div class="tab-titles">
+        <p class="tab-links active-timelink" onclick="opentimeline('academic')"><i
+                class="fa-solid fa-graduation-cap"></i> Academic</p>
+        <p class="tab-links" onclick="opentimeline('professional')"><i class="fa-solid fa-briefcase"></i>
+            Professional</p>
+    </div>
+    <div class="timeline-container tab-contents active-timetab" id="academic">
+        <div class="time-container left-container">
+            <span class="time-rounder"></span>
+            <div class="text-box">
+                <h2>The Ohio State University, GPA: 4.0 </h2>
+                <p><i class="fa-solid fa-location-pin"></i> Columbus, USA</p>
+                <p>MS, Computer Engineering</p>
+                <small><i class="fa-solid fa-calendar-days"></i> 2023-2025</small>
             </div>
         </div>
-
-
-        <!-- Swiper Navigation Buttons -->
-        <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide"
-            aria-controls="swiper-wrapper-d1a6e53d63def310f">
-            <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+        <div class="time-container right-container">
+            <span class="time-rounder"></span>
+            <div class="text-box ">
+                <h2>Indian Institute of Technology(IIT-K), GPA: 3.7</h2>
+                <p><i class="fa-solid fa-location-pin"></i> Kanpur, India</p>
+                <p>MTech, Mechanical Engineering</p>
+                <small><i class="fa-solid fa-calendar-days"></i> 2020-2022</small>
+            </div>
         </div>
-        <div class="swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide"
-            aria-controls="swiper-wrapper-d1a6e53d63def310f">
-            <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+        <div class="time-container left-container">
+            <span class="time-rounder"></span>
+            <div class="text-box">
+                <h2>Deenbandhu Chhotu Ram University of Science and Technology, GPA: 3.4</h2>
+                <p><i class="fa-solid fa-location-pin"></i> Haryana, India</p>
+                <p>BTech, Mechanical </p>
+                <small><i class="fa-solid fa-calendar-days"></i> 2015-2019</small>
+            </div>
         </div>
-
-        <!-- Swiper Pagination Bullets -->
-        <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets">
-            <!-- Pagination bullets indicate the current slide -->
-            <span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button"
-                aria-label="Go to slide 1"></span>
-            <!-- Additional bullets follow the same structure -->
+    </div>
+    <div class="timeline-container tab-contents" id="professional">
+        <div class="time-container left-container">
+            <span class="time-rounder"></span>
+            <div class="text-box">
+                <h2>Senior Software Development Engineer</h2>
+                <p>Larsen & Toubro Infotech</p>
+                <p><i class="fa-solid fa-location-pin"></i> Bangalore, India</p>
+                <small><i class="fa-solid fa-calendar-days"></i> 2022-2023</small>
+            </div>
         </div>
-
-        <!-- Swiper Notification (Used by Swiper.js) -->
-        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+        <div class="time-container right-container">
+            <span class="time-rounder"></span>
+            <div class="text-box">
+                <h2>Devops Engineer Intern</h2>
+                <p>TCS</p>
+                <p><i class="fa-solid fa-location-pin"></i> Remote</p>
+                <small><i class="fa-solid fa-calendar-days"></i> 2020</small>
+            </div>
+        </div>
     </div>
 </section>

@@ -69,7 +69,7 @@
 							<h2>About</h2>
 						</header>
 						<p>I am a seasoned and adept software development enthusiast with a solid background in Software
-							Development, Machine/Deep Learning, Computer Vision, and Web Development. With over 2+ years
+							Development, Machine/Deep Learning, Computer Vision, and Web Development. With over 3+ years
 							of hands-on experience and expertise in these areas. </p>
 						<table class="about__info">
 							<tr>
@@ -90,20 +90,20 @@
 						<div class="about__buttons">
 							<a href="https://www.linkedin.com/in/utkarsh-sharma-profile/" target="_blank"
 								class="button">
-								<img src="images/linkedin.png" alt="LinkedIn" width="24" height="24"> LinkedIn
+								<i class="fa-brands fa-linkedin"></i> LinkedIn
 							</a>
 
 							<a href="https://github.com/iutkarsh2020/" target="_blank" class="button">
-								<img src="images/github.png" alt="GitHub" width="24" height="24"> GitHub
+								<i class="fa-brands fa-github"></i> GitHub
 							</a>
 
 							<a href="academicCv_Utkarsh.pdf" target="_blank" class="button">
-								<img src="images/resume.jpeg" alt="Academic Resume" width="20" height="20"> Academic
+								<i class="fa-regular fa-file-lines"></i> Academic
 								Resume
 							</a>
 
 							<a href="Utkarsh_Sharma_Resume.pdf" target="_blank" class="button">
-								<img src="images/resume.jpeg" alt="Resume" width="24" height="24"> Resume
+								<i class="fa-solid fa-file-lines"></i> Resume
 							</a>
 						</div>
 
@@ -495,58 +495,50 @@
 
 
 
-			<!-- Second Section -->
+			<!-- Experiences Section -->
 
-			<section class="timeline-section" id="experience">
-				<h1 class="subtitle">My Journey</h1>
+			<section id="experience">
+				<h2 class="section__title">My Journey</h2>
 				<div class="tab-titles">
-					<p class="tab-links active-timelink" onclick="opentimeline('academic')"><i
-							class="fa-solid fa-graduation-cap"></i> Academic</p>
-					<p class="tab-links" onclick="opentimeline('professional')"><i class="fa-solid fa-briefcase"></i>
+					<p class="tab-links active-timelink"><i class="fa-solid fa-graduation-cap"></i> Academic</p>
+					<p class="tab-links"><i class="fa-solid fa-briefcase"></i>
 						Professional</p>
 				</div>
-				<div class="timeline-container tab-contents active-timetab" id="academic">
-					<div class="time-container left-container">
-						<span class="time-rounder"></span>
-						<div class="text-box">
+				<div class="timeline__wrapper">
+					<div class="timeline__container timeline__left">
+						<div class="timeline__content">
 							<h2>The Ohio State University, GPA: 4.0 </h2>
 							<p><i class="fa-solid fa-location-pin"></i> Columbus, USA</p>
 							<p>MS, Computer Engineering</p>
 							<small><i class="fa-solid fa-calendar-days"></i> 2023-2025</small>
 						</div>
 					</div>
-					<div class="time-container right-container">
-						<span class="time-rounder"></span>
-						<div class="text-box ">
+					<div class="timeline__container timeline__right">
+						<div class="timeline__content">
 							<h2>Indian Institute of Technology(IIT-K), GPA: 3.7</h2>
 							<p><i class="fa-solid fa-location-pin"></i> Kanpur, India</p>
 							<p>MTech, Mechanical Engineering</p>
 							<small><i class="fa-solid fa-calendar-days"></i> 2020-2022</small>
 						</div>
 					</div>
-					<div class="time-container left-container">
-						<span class="time-rounder"></span>
-						<div class="text-box">
+					<div class="timeline__container timeline__left">
+						<div class="timeline__content">
 							<h2>Deenbandhu Chhotu Ram University of Science and Technology, GPA: 3.4</h2>
 							<p><i class="fa-solid fa-location-pin"></i> Haryana, India</p>
 							<p>BTech, Mechanical </p>
 							<small><i class="fa-solid fa-calendar-days"></i> 2015-2019</small>
 						</div>
 					</div>
-				</div>
-				<div class="timeline-container tab-contents" id="professional">
-					<div class="time-container left-container">
-						<span class="time-rounder"></span>
-						<div class="text-box">
+					<div class="timeline__container timeline__right">
+						<div class="timeline__content">
 							<h2>Senior Software Development Engineer</h2>
 							<p>Larsen & Toubro Infotech</p>
 							<p><i class="fa-solid fa-location-pin"></i> Bangalore, India</p>
 							<small><i class="fa-solid fa-calendar-days"></i> 2022-2023</small>
 						</div>
 					</div>
-					<div class="time-container right-container">
-						<span class="time-rounder"></span>
-						<div class="text-box">
+					<div class="timeline__container timeline__left">
+						<div class="timeline__content">
 							<h2>Devops Engineer Intern</h2>
 							<p>TCS</p>
 							<p><i class="fa-solid fa-location-pin"></i> Remote</p>
@@ -554,9 +546,8 @@
 						</div>
 					</div>
 				</div>
+
 			</section>
-
-
 
 
 			<section id="Projects">
@@ -570,7 +561,24 @@
 						<div class="swiper-slide">
 							<div class="portfolio-container">
 								<!-- Project Image -->
-								<img src="images/minesweeper.png" alt="Drive AI vector art" class="portfolio__img">
+								<img src="images/Gitlet.png" alt="Gitlet" class="portfolio__img">
+
+								<!-- Project Details -->
+								<div class="portfolio__data">
+									<h3 class="portfolio__title">Gitlet - Mini Version Of Git
+									</h3>
+									<p class="portfolio__description">Read on how version controlling is done inside git, how hashing is done to store information of different commits in a branch. Implemented git commands like add, commit, checkout, merge etc.</p>
+										<a href="https://github.com/iutkarsh2020/Gitlet-A-mini-version-of-Git" class="portfolio__button" target="_blank">
+
+										View <i class="fa-solid fa-arrow-right"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="portfolio-container">
+								<!-- Project Image -->
+								<img src="images/minesweeper.png" alt="Minesweeper" class="portfolio__img">
 
 								<!-- Project Details -->
 								<div class="portfolio__data">
@@ -582,7 +590,42 @@
 										running the program, a screen displays the Minesweeper board, adhering to the
 										familiar rules we
 										all know.</p>
-									<a href="https://github.com/aksh-ai/drive-ai" class="portfolio__button">
+										<a href="https://github.com/iutkarsh2020/MineSweeper-Game" class="portfolio__button" target="_blank">
+
+										View <i class="fa-solid fa-arrow-right"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="portfolio-container">
+								<!-- Project Image -->
+								<img src="images/tictactoe.png" alt="Tic-Tac-Toe" class="portfolio__img">
+
+								<!-- Project Details -->
+								<div class="portfolio__data">
+									<h3 class="portfolio__title">Tic-Tac-Toe
+									</h3>
+									<p class="portfolio__description">Created a version of the Game "Tie-Tac-Toe" which can be played by 2 users independently, or with a machine. The machine is implemented such that it will maximize its chance of victory!</p>
+										<a href="https://github.com/iutkarsh2020/Tiv-Tac-Toe" class="portfolio__button" target="_blank">
+
+										View <i class="fa-solid fa-arrow-right"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="portfolio-container">
+								<!-- Project Image -->
+								<img src="images/Ataxx.jpeg" alt="Ataxx" class="portfolio__img">
+
+								<!-- Project Details -->
+								<div class="portfolio__data">
+									<h3 class="portfolio__title">Ataxx
+									</h3>
+									<p class="portfolio__description">Created a game called "Ataxx" that can be played by users or machines. However, it's particularly enjoyable to observe two machine opponents engaging in a highly competitive match.</p>
+										<a href="https://github.com/iutkarsh2020/Ataxx-Game" class="portfolio__button" target="_blank">
+
 										View <i class="fa-solid fa-arrow-right"></i>
 									</a>
 								</div>
@@ -598,7 +641,7 @@
 									<h3 class="portfolio__title">Compiler for a Dummy Programming Language
 									</h3>
 									<p class="portfolio__description">Developed a compiler for a basic Attribute Grammar. This language transforms written code into an Abstract Syntax Tree (AST) and performs comprehensive syntactic and semantic error checks, including type checking and declaration validation. The compiler conducts abstract analysis and incorporates code optimization techniques to enhance the overall efficiency of the generated code.</p>
-									<a href="https://github.com/iutkarsh2020/Compiler-Project/tree/main" class="portfolio__button">
+									<a href="https://github.com/iutkarsh2020/Compiler-Project/tree/main" class="portfolio__button" target="_blank">
 										View <i class="fa-solid fa-arrow-right"></i>
 									</a>
 								</div>
@@ -607,7 +650,7 @@
 						<div class="swiper-slide">
 							<div class="portfolio-container">
 								<!-- Project Image -->
-								<img src="images/enigma.jpeg" alt="Drive AI vector art" class="portfolio__img">
+								<img src="images/enigma.jpeg" alt="Drive AI vector art" class="portfolio__img" target="_blank">
 
 								<!-- Project Details -->
 								<div class="portfolio__data">
@@ -620,7 +663,7 @@
 										internet, replicated the logic behind the machine to encrypt and decrypt the
 										messages.</p>
 									
-									<a href="https://github.com/aksh-ai/drive-ai" class="portfolio__button">
+									<a href="https://github.com/iutkarsh2020/Enigma-Project" class="portfolio__button" target="_blank">
 										View <i class="fa-solid fa-arrow-right"></i>
 									</a>
 								</div>
@@ -641,7 +684,7 @@
 									<p class="portfolio__description">Utilizing computer vision, identify bounding boxes for all vehicles on the road at a specific moment, and employ deep learning for motion analysis to predict vehicle movements at various times.</p>
 									
 									<p class="portfolio__description">
-									<a href="https://github.com/iutkarsh2020/vehicleDetectionAndMotionAnalysis" class="portfolio__button">
+									<a href="https://github.com/iutkarsh2020/vehicleDetectionAndMotionAnalysis" class="portfolio__button" target="_blank">
 										View <i class="fa-solid fa-arrow-right"></i>
 									</a>
 								</div>
