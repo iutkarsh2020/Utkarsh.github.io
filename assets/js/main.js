@@ -137,7 +137,7 @@ $(function () {
 
 })(jQuery);
 
-/* Functionality for skills section start*/
+/* Functionality for skills section*/
 $(function () {
 	$('.skills__arrow').on('click', function () {
 		$(this).toggleClass('skills__open');
@@ -145,23 +145,13 @@ $(function () {
 	});
 });
 
-function opentimeline(tabName) {
-	var i;
-	var tabContents = document.getElementsByClassName("tab-contents");
-	var tabLinks = document.getElementsByClassName("tab-links");
+/*Functionality for timeline*/
+$(function () {
+	$('.tab-links').on('click', function () {
+		$('#timeline-academic').toggleClass('timeline__active');
+		$('#timeline-professional').toggleClass('timeline__active');
+		$(this).toggleClass('active-timelink');
+		$(this).siblings().toggleClass('active-timelink');
+	});
+});
 
-	for (i = 0; i < tabContents.length; i++) {
-		tabContents[i].style.display = "none";
-	}
-
-	for (i = 0; i < tabLinks.length; i++) {
-		tabLinks[i].classList.remove("active-timelink");
-	}
-
-	document.getElementById(tabName).style.display = "block";
-	for (i = 0; i < tabLinks.length; i++) {
-		if (tabLinks[i].textContent.trim() === tabName) {
-			tabLinks[i].classList.add("active-timelink");
-		}
-	}
-}
